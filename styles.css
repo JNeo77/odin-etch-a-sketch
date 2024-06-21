@@ -32,11 +32,15 @@ button {
   height: 500px;
 }
 
-.column {
+.square {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
   border: 1px solid rgb(172, 172, 172);
   width: 500px;
+}
+
+.color {
+  background-color: rgb(3, 3, 146);
 }

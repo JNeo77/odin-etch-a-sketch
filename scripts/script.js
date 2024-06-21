@@ -5,12 +5,17 @@ function createGrid (count = 16) {
     const rowDiv = document.createElement("div");
     rowDiv.classList.add("row");
     for (let j = 0; j < count; j++) {
-      const colDiv = document.createElement("div");
-      colDiv.classList.add("column");
-      rowDiv.appendChild(colDiv);
+      const squareDiv = document.createElement("div");
+      squareDiv.classList.add("square");
+      squareDiv.addEventListener("mouseover", () => {
+        squareDiv.classList.add("color");
+      });
+      rowDiv.appendChild(squareDiv);
     }
     container.appendChild(rowDiv);
   }
 }
 
+
 createGrid();
+
